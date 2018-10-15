@@ -1,11 +1,13 @@
 import React from 'react';
 import style from './Title.css';
-import PropTypes from 'prop-types';
 
-const Title = props => <h1 className={style.Title}>{props.title}</h1>;
-
-Title.propTypes = {
-  title: PropTypes.string
-};
+const Title = props => {
+  return (
+    <div>
+      <h1 className={style.Title}>Todo App</h1>
+      <p>Tasks in queue: {props.tasks}</p>
+    </div>
+  )
+}
 
 export default Title;
