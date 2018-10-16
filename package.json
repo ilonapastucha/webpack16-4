@@ -20,7 +20,8 @@
     "start-app": "babel components/app.js --watch --out-file app-compiled.js",
     "start-gif": "babel components/gif.js --watch --out-file gif-compiled.js",
     "start-search": "babel components/search.js --watch --out-file search-compiled.js",
-    "webpack": "webpack"
+    "webpack:dev": "webpack --mode development",
+    "webpack": "webpack --env production"
   },
   "keywords": [],
   "author": "",
